@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Makes the website mobile friendly-->
+    <meta charset="utf-8">
+    <title>Places I have visited</title>   <!--sets text to title-->
+    <style>
+      h1,h2{
+        text-align: center; /*moves text in h1,h2 tag to the middle*/
+        font-family: 'Trebuchet MS', sans-serif; /*sets font of h1,h2*/
+      }
+      p{
+        font-style: Garamond, serif;
+      }
+      ul{
+        list-style: none;  /*removes styling of unordered list*/
+        text-align: center;
+      }
+      .main{
+        background-color: lightgrey /*changes background colour*/
+      }
+      figure {
+        border: thin #c0c0c0 solid; /*sets size and colour of border*/
+        display: flex; /*adjusts image to border*/
+        flex-flow: column; /*adjusts image to border */
+        padding: 5px;   /*sets padding to 5pixels */
+        max-width: 220px; /*sets max width to 200pix */
+      }
+      .GermanImages{
+        background-color: lightblue;
+      }
+      .GermanImages::after{
+        content: ""; /*creates a space below images*/
+        clear: both; /*controls flow with contents*/
+        display: table; /*lets contents act like a table*/
+      }
+      .column{
+        float: left; /*sets contents to go toward the left*/
+        width: 33.33%; /*sets width to 33.33%*/
+        padding: 5px; /*sets padding to 5 pixels*/
+      }
+      body{
+        background-color: lightyellow;
+      }
+      .JapanImages{
+        background-color: #254e8f;
+        color: white;
+      }
+      .JapanImages::after{
+        content: "";
+        clear: both;
+        display: table;
+      }
+                                  /*https://www.w3schools.com/howto/howto_css_images_side_by_side.asp*/
+      .USAImages{
+        background-color: lightblue;
+      }
+      .USAImages::after{
+        content: "";
+        clear: both;
+        display: table;
+      }
+      footer{
+        background-color: #90debc;
+      }
+
+
+
+    </style>
+
+
+  </head>
+  <body>
+    <h1><b>Places I have visited</b></h1> <!--present text with the h1 format and styles and makes it bold-->
+    <h2>I have visited:</h2> <!--present text with the h2 format and styles-->
+    <ul>    <!--creates an unordered list-->
+      <li>Germany</li> <!--creates a line with text in the list-->
+      <li>Japan</li>
+      <li><abbr title="United States of America">USA</abbr></li> <!--creates a line with text in the list and sets text with a pop up abbreviation-->
+    </ul>
+
+
+
+    <div class="main"> <!--creates a class called main-->
+
+    <p><b><u>Facts about Germany</u></b></p> <!--presents text with the paragraph styles and makes it bold and, also makes it underlined-->
+
+    <table>  <!--creates a table-->
+      <thead> <!--sets table header-->
+        <tr>   <!--sets a row in the table-->
+          <th>Official name:</th> <!--sets table head-->
+          <td>Federal Republic of Germany</td> <!--sets table fields below head table and paragraph-->
+        </tr>
+      </thead>
+      <tbody>  <!--sets table body-->
+        <tr>
+          <th>Capital: </th>
+          <td>Berlin</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <th>Official Language: </th>
+          <td>German</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <th>Currency: </th>
+          <td>Euro</td>
+        </tr>
+      </tbody>
+      <tfoot>  <!--sets table footer-->
+        <tr>
+          <th>Major Rivers: </th>
+          <td>Rhine, Elbe, Main, Danube</td>
+        </tr>
+      </tfoot>
+      </table>
+
+      <p>Get more infomation about germany from <a href="https://www.natgeokids.com/uk/discover/geography/countries/country-fact-file-germany/">This link</a>. </p>
+      <!--sets text to paragraph style and sets and presents words with a link to a website-->
+      <hr>
+
+      <p><b><u>Facts about Japan</u></b></p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Official name:</th>
+            <td>Japan</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Capital: </th>
+            <td>Tokyo</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <th>Official Language: </th>
+            <td>Japanese</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <th>Currency: </th>
+            <td>Japanese yen</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th>Major Rivers: </th>
+            <td>Biwa, Inawashiro, Kasumigaura</td>
+          </tr>
+        </tfoot>
+
+        </table>
+        <p>Get more infomation about japan from <a href="https://www.natgeokids.com/uk/discover/geography/countries/facts-about-japan/">This link</a>. </p>
+
+        <hr>
+
+        <p><b><u>Facts about <abbr title="United States of America">USA</abbr></u></b></p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Official name:</th>
+              <td>United States of America</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Capital: </th>
+              <td>Washington, D.C.</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th>Languages: </th>
+              <td>English, Spanish</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th>Currency: </th>
+              <td>U.S. dollar</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th>Major Rivers: </th>
+              <td>Mississippi, Missouri, Colorado</td>
+            </tr>
+          <tfoot>
+          </table>
+
+          <p>Get more infomation about the USA from <a href="https://www.natgeokids.com/uk/discover/geography/countries/usa-facts/">This link</a>. </p>
+          </div>
+          <footer>
+            <h3><u>Total population ranking</u></h3>
+            <ol>
+              <li>USA: 324,057,300</li>
+              <li>Japan: 126,048,450</li>
+              <li>Germany: 82,422,299</li>
+            </ol>
+
+          <p>I liked Japan the most <br> They have many unique cafes <br> They have unique types of food <br> They have nice views and tourist attractions</p>
+          <!--br breaks the text by moving it to the next line-->
+          </footer>
+          <h1>Map</h1>
+          <p align="center"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d23178158.633295856!2d-5.336215504882804!3d44.834498242250284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1667077576495!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+          <!--uses the paragraph styling and creates a gap/line, align will move the media to the middle of the page iframe presents a map on the webpage-->
+          <p>Here are some images from Germany</p> <!--paragraph text for German section-->
+
+          <div class="GermanImages"> <!--class for german images-->
+          <figure class="column">  <!--figure class for photo with text-->
+            <img src="PlacesPhotos/Germany.jpg" =
+            alt="Neuschwanstein Castle">            <!--shows image defined on webpage-->
+            <figcaption><address>Neuschwanstein Castle</address></figcaption> <!--caption for photo and sets the text to the address style-->
+          </figure>
+
+          <figure class= "column">
+            <img src="PlacesPhotos/Germany1.jpg"
+            alt="Berlin, Germany">
+            <figcaption><address>Berlin, Germany</address></figcaption>
+          </figure>
+
+          <figure class= "column">
+            <img src="PlacesPhotos/Germany2.jpg"
+            alt="Lubeck, Germany">
+            <figcaption><address>Lubeck, Germany</address></figcaption>
+          </figure>
+          </div>
+
+          <p>Here are some images from Japan</p>   <!--paragraph text for Japan section-->
+
+          <div class="JapanImages">
+          <figure class="column">  <!-- reference https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption-->
+            <img src="PlacesPhotos/Japan.jpg"
+            alt="Fujiyoshida, Japan">
+            <figcaption><address>Fujiyoshida, Japan</address></figcaption>
+          </figure>
+
+          <figure class= "column">
+            <img src="PlacesPhotos/Japan1.jpg"
+            alt="Torii gate, Miyajima, Japan">
+            <figcaption><address>Torii gate, Miyajima, Japan</address></figcaption>
+          </figure>
+
+          <figure class= "column">
+            <img src="PlacesPhotos/Japan2.jpg"
+            alt="Red gate in kyoto, japan">
+            <figcaption><address>Red gate in kyoto, japan</address></figcaption>
+          </figure>
+          </div>
+
+          <p>Here are some images from USA</p>   <!--paragraph text for Japan section-->
+
+          <div class="USAImages">
+          <figure class="column">
+            <img src="PlacesPhotos/USA.jpg"
+            alt="Lower Manhattan, New York City, USA">
+            <figcaption><address>New York City, USA</address></figcaption>
+          </figure>
+
+          <figure class= "column">
+            <img src="PlacesPhotos/USA1.jpg"
+            alt="Santa Monica, California, USA">
+            <figcaption></address>Santa Monica, California, USA</address></figcaption>
+          </figure>
+
+          <figure class= "column">
+            <img src="PlacesPhotos/USA2.jpg"
+            alt="Millennium Park, Chicago, Illinois, USA">
+            <figcaption></address>Chicago, Illinois, USA</address></figcaption>
+          </figure>
+          </div>
+
+          <p>Information are from <cite>National Geographic Kids</cite></p> <!--paragraph text, cite changes font of text-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+
+</html>

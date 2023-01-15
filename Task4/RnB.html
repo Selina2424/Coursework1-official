@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Makes the website mobile friendly-->
+    <meta charset="utf-8">
+    <title>RnB Music</title>  <!--sets text to title-->
+    <style>
+      h1{
+        text-align:center; /*moves text in h1,h2 tag to the middle*/
+      }
+      p{
+        font-family: Garamond, serif; /*sets font of p*/
+      }
+      .table{
+        text-align: left; /*moves text in h1,h2 tag to the middle*/
+      }
+      figure {
+        border: thin #c0c0c0 solid; /*sets size and colour of border*/
+        display: flex;  /*adjusts image to border*/
+        flex-flow: column;  /*adjusts image to border*/
+        padding: 5px;   /*sets padding to 5pixels*/
+        max-width: 220px;  /*sets max width to 200pix*/
+      }
+      .column {
+        float: left; /*sets contents to go toward the left*/
+        width: 33.33%; /*sets width to 33.33%*/
+        padding: 5px;  /*sets padding to 5 pixels*/
+      }
+      .table::after {
+        content: "";  /*creates a space below images*/
+        clear: both;  /*controls flow with contents*/
+        display: table;  /*lets contents act like a table*/
+      }
+      body{
+        background-color: lightyellow; /*changes background colour*/
+      }
+      .section1{
+        background-color: lightgreen; /*changes background colour of section1*/
+      }
+      footer{
+        background-color: lightblue; /*changes background colour of footer*/
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1><u><b><abbr title="Rock and Blues">RnB</abbr> Music</b></u></h1>
+    <!--present text with the h1 format and styles and makes it bold and underlines the text and sets text with a pop up abbreviation-->
+  <div class="section1"> <!--creates a class called section1-->
+
+  <h2><b>What is RnB music</b></h2> <!--present text with the h2 format and styles and makes it bold-->
+  <p><abbr title="Rock and Blues">RnB</abbr> is a combination of jazz, gospel, and blues <!--presents text with the paragraph styles and sets text with a pop up abbreviation-->
+    <br> As the genre progressed throughout the decades, R&B music started becoming known as soul music <!--breaks the text within the paragraph tag and moves text to new line-->
+    <br> It originated in African-American communities in the 1940s
+  </p>
+
+
+
+
+      <table width=50%> <!--sets table width to 50%-->
+        <td width=50%> <!--sets td width to 50%-->
+        <table> <!--creates a table-->
+          <thead> <!--sets table header-->
+            <tr>   <!--sets a row in the table-->
+              <th>Started in:</th> <!--sets table head-->
+              <td>1948</td>  <!--sets table fields below head table and paragraph-->
+            </tr>
+          </thead>
+          <tbody> <!--sets table body-->
+            <tr>
+              <th>Originated from:</th>
+              <td><address>African-Americans</address></td><!--sets table fields below head table and paragraph and sets text to address font-->
+            </tr>
+          </tbody>
+        </table>
+        </td>
+        <td rowspan="2" width=50%>
+          <figure class="column">  <!--figure class for photo with text-->
+            <img src="rnb.jpg" =
+            alt="Neon sign">            <!--shows image defined on webpage-->
+            <figcaption>Neon sign</figcaption> <!--caption for photo-->
+        </td>
+      </table>
+      <h3>Random <abbr title="Rock and Blues">RnB</abbr> facts</h3> <!--present text with the h3 format and sets text with a pop up abbreviation-->
+      <ul> <!--creates and unordered list-->
+        <li>Rihanna released a forgotten debut mixtape back in 2005.</li>
+        <li>Before he was famous, Ne-Yo wrote Mario's hit song 'Let Me Love You'.</li>
+        <li>Justin Timberlake, Aaliyah, Beyonce and Usher all started on US TV show 'Star Search.'</li>
+        <!--creates a line of text withing unordered list-->
+      </ul>
+      <h3>Top <abbr title="Rock and Blues">RnB</abbr> songs ranked</h3>
+      <ol>  <!--creates and ordered list-->
+        <li>“We Belong Together” – Mariah Carey</li>
+        <li>“I Choose You (The Mack/Soundtrack Version)” – Willie Hutch</li>
+        <li>“What’s Going On” – Marvin Gaye</li>
+        <!--creates a line of text withing unordered list-->
+      </ol>
+      <hr>  <!--creates a horizontal line-->
+      </div>
+
+    <footer>
+    <h1>Here is a <abbr title="Rock and Blues">RnB</abbr> song</h1>
+
+    <p align="center"><audio controls autoplay>
+      <source src="rnb.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio> <!--aligns audio player in the center and plays linked song in directory-->
+    </p>
+
+    <hr>
+
+    <h1>Here is a video of the <abbr title="Rock and Blues">RnB</abbr> song</h1>
+
+    <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/2EwViQxSJJQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></p></iframe>
+    <!--aligns the media in the center of the page and presents a video from a webpage-->
+    <p><cite>www.musicalexpert.org</cite></p>
+    </footer> <!--creates a footer to contain part of the webpage-->
+
+
+
+  </body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Makes the website mobile friendly-->
+    <meta charset="utf-8">
+    <title>Pop Music</title>  <!--sets text to title-->
+    <style>
+      h1{
+        text-align:center; /*moves text in h1,h2 tag to the middle*/
+      }
+      p{
+        font-family: Garamond, serif; /*sets font of p*/
+      }
+      .table{
+        text-align: left; /*moves text in h1,h2 tag to the middle*/
+      }
+      figure {
+        border: thin #c0c0c0 solid; /*sets size and colour of border*/
+        display: flex; /*adjusts image to border*/
+        flex-flow: column; /*adjusts image to border*/
+        padding: 5px;  /*sets padding to 5pixels*/
+        max-width: 220px; /*sets max width to 200pix*/
+      }
+      .column {
+        float: left; /*sets contents to go toward the left*/
+        width: 33.33%; /*sets width to 33.33%*/
+        padding: 5px; /*sets padding to 5 pixels*/
+      }
+      .table::after {
+        content: ""; /*creates a space below images*/
+        clear: both; /*controls flow with contents*/
+        display: table; /*lets contents act like a table*/
+      }
+      body{
+        background-color: lightyellow; /*changes background colour*/
+      }
+      .section1{
+        background-color: lightgreen; /*changes background colour of section1*/
+      }
+      footer{
+        background-color: lightblue; /*changes background colour of footer*/
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1><u><b>Pop Music</b></u></h1>
+    <!--present text with the h1 format and styles and makes it bold and underlines the text and sets text with a pop up abbreviation-->
+  <div class="section1"> <!--creates a class called section1-->
+
+  <h2><b>What is Pop music</b></h2> <!--present text with the h2 format and styles and makes it bold-->
+  <p>It is usually played on electronic instruments <!--presents text with the paragraph styles-->
+    <br>It consists of short songs with a strong beat and simple tunes  <!--breaks the text within the paragraph tag and moves text to new line-->
+    <br>It is a genre of popular music that produces the most hits
+  </p>
+
+
+
+
+      <table width=50%> <!--sets table width to 50%-->
+        <td width=50%> <!--sets td width to 50%-->
+        <table> <!--creates a table-->
+          <thead> <!--sets table header-->
+            <tr>   <!--sets a row in the table-->
+              <th>Started in:</th> <!--sets table head-->
+              <td>1950s</td>  <!--sets table fields below head table and paragraph-->
+            </tr>
+          </thead>
+          <tbody> <!--sets table body-->
+            <tr>
+              <th>Originated from:</th>
+              <td><address>United States, United Kingdom</address></td> <!--sets table fields below head table and paragraph and sets text to address font-->
+            </tr>
+          </tbody>
+        </table>
+        </td>
+        <td rowspan="2" width=50%>
+          <figure class="column">  <!--figure class for photo with text-->
+            <img src="Pop.jpg" =
+            alt="DJ">            <!--shows image defined on webpage-->
+            <figcaption>DJ</figcaption> <!--caption for photo-->
+        </td>
+      </table>
+        <h3>Random Pop facts</h3> <!--present text with the h3 format-->
+      <ul> <!--creates and unordered list-->
+        <li>Elvis Presley was a rock and roll musician and was one of the first worldwide pop music stars that we know today.</li>
+        <li>The Beatles were one of the first "boy bands" in pop music, bands such as Take That, One Direction, JLS and many more have them to thank!</li>
+        <li>In the UK, 178 songs have sold over 1 million copies.</li> <!--creates a line of text withing unordered list-->
+      </ul>
+      <h3>Top Pop songs ranked</h3>
+      <ol> <!--creates and ordered list-->
+        <li> "Single Ladies (Put a Ring on It)" by Beyoncé</li>
+        <li>"Umbrella" by Rihanna featuring Jay-Z</li>
+        <li>"Shake it Off" by Taylor Swift</li> <!--creates a line of text withing unordered list-->
+      </ol>
+      <hr> <!--creates a horizontal line-->
+      </div>
+
+    <footer>
+    <h1>Here is a Pop song</h1>
+
+    <p align="center"><audio controls autoplay>
+      <source src="Pop.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>    <!--aligns audio player in the center and plays linked song in directory-->
+    </p>
+
+    <hr>
+
+    <h1>Here is a video of the Pop song</h1>
+
+    <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/YaEG2aWJnZ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p></iframe>
+    <!--aligns the media in the center of the page and presents a video from a webpage-->
+    <p><cite>www.musicalexpert.org</cite></p>
+    </footer> <!--creates a footer to contain part of the webpage-->
+
+
+
+  </body>
+</html>

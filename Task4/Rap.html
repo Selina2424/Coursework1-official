@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Makes the website mobile friendly-->
+    <meta charset="utf-8">
+    <title>Rap Music</title>  <!--sets text to title-->
+    <style>
+      h1{
+        text-align:center; /*moves text in h1,h2 tag to the middle*/
+      }
+      p{
+        font-family: Garamond, serif; /*sets font of p*/
+      }
+      .table{
+        text-align: left; /*moves text in h1,h2 tag to the middle*/
+      }
+      figure {
+        border: thin #c0c0c0 solid; /*sets size and colour of border*/
+        display: flex; /*adjusts image to border*/
+        flex-flow: column; /*adjusts image to border*/
+        padding: 5px;  /*sets padding to 5pixels*/
+        max-width: 220px; /*sets max width to 200pix*/
+      }
+      .column {
+        float: left; /*sets contents to go toward the left*/
+        width: 33.33%; /*sets width to 33.33%*/
+        padding: 5px; /*sets padding to 5 pixels*/
+      }
+      .table::after {
+        content: ""; /*creates a space below images*/
+        clear: both; /*controls flow with contents*/
+        display: table; /*lets contents act like a table*/
+      }
+      body{
+        background-color: lightyellow; /*changes background colour*/
+      }
+      .section1{
+        background-color: lightgreen; /*changes background colour of section1*/
+      }
+      footer{
+        background-color: lightblue; /*changes background colour of footer*/
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1><u><b>Rap Music</b></u></h1>
+    <!--present text with the h1 format and styles and makes it bold and underlines the text and sets text with a pop up abbreviation-->
+  <div class="section1"> <!--creates a class called section1-->
+
+  <h2><b>What is Rap music</b></h2>  <!--present text with the h2 format and styles and makes it bold-->
+  <p>Rap music is sometimes known as hip-hop music.  <!--presents text with the paragraph styles-->
+    <br>Rap musicians generally perform in a vocal style in which the lyrics are spoken, rather than sung. <!--breaks the text within the paragraph tag and moves text to new line-->
+    <br>It is popular among people of all ages and backgrounds.
+  </p>
+
+
+
+
+      <table width=50%>  <!--sets table width to 50%-->
+        <td width=50%>  <!--sets td width to 50%-->
+        <table> <!--creates a table-->
+          <thead> <!--sets table header-->
+            <tr>   <!--sets a row in the table-->
+              <th>Started in:</th> <!--sets table head-->
+              <td>1970s</td>  <!--sets table fields below head table and paragraph-->
+            </tr>
+          </thead>
+          <tbody> <!--sets table body-->
+            <tr>
+              <th>Originated from:</th>
+              <td><address>United States</address></td> <!--sets table fields below head table and paragraph and sets text to address font-->
+            </tr>
+          </tbody>
+        </table>
+        </td>
+        <td rowspan="2" width=50%>
+          <figure class="column">  <!--figure class for photo with text-->
+            <img src="Rap.jpg" =
+            alt="Rapper">            <!--shows image defined on webpage-->
+            <figcaption>Rapper</figcaption> <!--caption for photo-->
+        </td>
+      </table>
+      <h3>Random Rap facts</h3> <!--present text with the h3 format-->
+      <ul> <!--creates and unordered list-->
+        <li>  Busta Rhymes was the voice of Reptar on Rugrats.</li>
+        <li>Lauryn Hill got booed while performing at The Apollo.</li>
+        <li>The cover of Enter The Wu-Tang (36 Chambers) didn't feature all the members of Wu-Tang.</li>
+      </ul> <!--creates a line of text withing unordered list-->
+      <h3>Top Rap songs ranked</h3>
+      <ol> <!--creates and ordered list-->
+        <li>"Bye Bye" Marshmello, Juice WRLD</li>
+        <li>"Sticky" Drake</li>
+        <li>"STAYING ALIVE" (feat. Drake & Lil Baby) DJ Khaled, Drake, Lil Baby</li> <!--creates a line of text withing unordered list-->
+      </ol>
+      <hr> <!--creates a horizontal line-->
+      </div>
+
+    <footer>
+    <h1>Here is a Rap song</h1>
+
+    <p align="center"><audio controls autoplay>
+      <source src="Rap.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>    <!--aligns audio player in the center and plays linked song in directory-->
+    </p>
+
+    <hr>
+
+    <h1>Here is a video of the Rap song</h1>
+
+    <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/8CdcCD5V-d8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p></iframe>
+    <!--aligns the media in the center of the page and presents a video from a webpage-->
+    <p><cite>www.musicalexpert.org</cite></p>
+    </footer> <!--creates a footer to contain part of the webpage-->
+
+
+
+  </body>
+</html>
